@@ -1,40 +1,26 @@
-Abdullah Hamdan – LaravelShop
-This is a Laravel-based project I built to learn and explore the Laravel framework. It includes full authentication using Laravel Breeze, along with email verification upon registration.
+# Abdullah Hamdan – LaravelShop
 
-Each user has a profile where they can upload an image and write a bio. They can update these details while logged in. Users can also post items for sale, and buyers can purchase them using PayPal integration. The payment goes to the website owner, and the user who sold the item can later collect the amount via PayPal.
+This is a laravel project that I did to basically learn laravel. It has full authentication using breeze and uses email vertification also when creating and loging accounts. Every one has a profile and they can select the their image and enter their bio. They can also later update if they want later when they are logged in. Every one can post items for other people to buy. The people that want to later buy it will do it via paypal integration. The money goes to the website owner and then the users that sold that item will be able to collect the paypal money. Also when a guy buyes from the buyer the buyer sees where he want their delievery to be delievered at. I wanted to implement PostNord api for the delievery time and to select delievery points but they took too long to answer and give me a SECRET KEY. The user that buys the produkt gets notified also when buying in the web application so that when a user wants to scam them they have proof that they bought the item. The users are able to modify their posts.
 
-Buyers provide a delivery address, and once they purchase an item, the app notifies them within the web application — helping avoid potential scams by giving buyers proof of purchase. Sellers can also edit or delete their own posts.
+---
 
-I originally intended to use the PostNord API for delivery time estimates and pickup location selection, but was unable to proceed as they delayed providing a secret API key.
+## Features
 
-The main focus was on learning Laravel and implementing the functionality, rather than UI/UX or visuals.
+- Full user authentication with Laravel Breeze and email verification
+- User profile image and bio updates
+- Post items for sale and edit/delete your own posts
+- PayPal integration for purchases
+- Buyer-side delivery input and in-app notifications as purchase proof
 
-Features
-Full user authentication using Laravel Breeze
+## Tech Stack
 
-Email verification on sign-up
+**Frontend:**
 
-User profile with editable bio and image
+- React
+- Tailwind CSS
 
-Item listing and purchase flow
+**Backend & Services:**
 
-PayPal integration for payments
-
-In-app purchase notifications for proof
-
-Editable/deletable posts
-
-Tech Stack
-Frontend:
-
-React
-
-Tailwind CSS
-
-Backend & Services:
-
-Laravel with Inertia.js
-
-Laravel Breeze (for auth)
-
-PayPal API
+- Laravel + React + Inertia.js
+- Laravel Breeze
+- PayPal API
